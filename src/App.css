@@ -3,12 +3,16 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  animation: App-logo-spin 1s linear;
+  border-radius: 50%;
+  height: 30vmin;
 }
 
 .App-header {
   background-color: #282c34;
+  /* background-image: url(https://thumbs.gfycat.com/HelplessBeautifulAurochs-size_restricted.gif); */
+  background-repeat: no-repeat;
+  background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,14 +23,48 @@
 }
 
 .App-link {
-  color: #61dafb;
+  animation: App-link-spin 2s linear;
+  padding: 2em;
+  height: 10vmin;
+}
+
+.App-love {
+  height: 5vmin;
+}
+
+li{
+  display: inline;
+}
+
+.code-type{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: typing 3s steps(20, end), blink-caret .65s step-end infinite;
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    height: 10vmin;
   }
   to {
-    transform: rotate(360deg);
+    height: 30vmin;
   }
 }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 25% }
+}
+
+@keyframes App-link-spin{ 
+  from {
+    rotate: 0deg;
+  } 
+  to{
+    rotate: 360deg;
+  }
+} 
+
