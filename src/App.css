@@ -32,17 +32,17 @@
   height: 5vmin;
 }
 
-li{
+li {
   display: inline;
 }
 
-.code-type{
+.code-type {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
+  border-right: 0.15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
-  animation: typing 3s steps(20, end), blink-caret .65s step-end infinite;
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3s steps(20, end), blink-caret 0.65s step-end infinite;
 }
 
 @keyframes App-logo-spin {
@@ -55,16 +55,19 @@ li{
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 25% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
 }
 
-@keyframes App-link-spin{ 
+@keyframes App-link-spin {
   from {
     rotate: 0deg;
-  } 
-  to{
+  }
+  to {
     rotate: 360deg;
   }
-} 
-
+}
